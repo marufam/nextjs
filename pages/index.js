@@ -1,7 +1,11 @@
-import Layout from "../components/Layout";
-import Link from "next/link";
+// ./pages/index.js
+import React from 'react'
+// Import the Head Component
+import Head from 'next/head'
+import Header from '../components/Header.jsx';
+import Article from '../components/Article';
+import Footer from '../components/Footer.jsx';
 
-//idealnya fungsi ini load data dari api backend, didokumentasi nya pakai isomorphic-unfetch
 function getArticle() {
   return {
     id: "1",
@@ -52,71 +56,17 @@ function getSocialMedia() {
   ];
 }
 
+
 export default () => (
-  <Layout>
-    <div id="main-wrap">
-      <div id="content">
-        <h2>{getArticle().title}</h2>
-        <div id="titledesc">
-          <p>
-            By {getArticle().author} / EdgeProp | {getArticle().date}
-          </p>
-          <p>Tags: {getArticle().tags}</p>
-        </div>
+  <div>
+    <Head>
+        <title>Simple Page</title>
+        {/* load css */}
+    </Head>
 
-        <img src={getArticle().img} />
-        <p id="imgdesc">{getArticle().img_desc}</p>
-        <div
-          id="article"
-          dangerouslySetInnerHTML={{ __html: getArticle().article }}
-        />
-        <br />
-        <div id="social">
-          <h3 id="social_title">Follow Us On</h3>
-          {getSocialMedia().map(social => (
-            <Link href={social.link}>
-              <a id="social_icon">
-                <img src={social.icon} alt={social.name} />
-              </a>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div id="sidebar" />
-    </div>
-    <style jsx>{`
-      #social_icon {
-        margin-right: 5px;
-      }
-      #social_title {
-        margin-bottom: 0px;
-      }
-      #content {
-        padding: 20px;
-        border: 1px solid #ddd;
-        float: left;
-        width: 70%;
-      }
-      #titledesc {
-        margin-top: 10px;
-      }
-
-      #imgdesc {
-        margin-top: 0px;
-      }
-      #main-wrap {
-        /* overflow to handle inner floating block */
-        overflow: hidden;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 25%;
-        height: 100px;
-        border: 1px solid #ddd;
-      }
-    `}</style>
-  </Layout>
-);
+    <Header title="Simple Page"/>
+    <Article data_article={getArticle()} social_media={getSocialMedia()}/>
+  
+    <Footer/>
+  </div>
+)
