@@ -2572,8 +2572,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Article__ = __webpack_require__("./components/Article.jsx");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Footer_jsx__ = __webpack_require__("./components/Footer.jsx");
 var _jsxFileName = "/home/amien/Documents/nextjs/pages/index.js";
-// ./pages/index.js
- // Import the Head Component
 
 
 
@@ -2626,35 +2624,35 @@ function getSocialMedia() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 59
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 60
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 61
     }
   }, "Simple Page")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Header_jsx__["a" /* default */], {
     title: "Simple Page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 63
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Article__["a" /* default */], {
     data_article: getArticle(),
     social_media: getSocialMedia(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 64
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Footer_jsx__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 65
     }
   }));
 });

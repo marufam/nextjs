@@ -1,6 +1,4 @@
-// ./pages/index.js
 import React from 'react'
-// Import the Head Component
 import Head from 'next/head'
 import Header from '../components/Header.jsx';
 import Article from '../components/Article';
@@ -61,7 +59,6 @@ export default () => (
   <div>
     <Head>
         <title>Simple Page</title>
-        {/* load css */}
     </Head>
     <Header title="Simple Page"/>
     <Article data_article={getArticle()} social_media={getSocialMedia()}/>
