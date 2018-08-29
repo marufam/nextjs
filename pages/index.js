@@ -63,10 +63,8 @@ export default () => (
         <title>Simple Page</title>
         {/* load css */}
     </Head>
-
     <Header title="Simple Page"/>
     <Article data_article={getArticle()} social_media={getSocialMedia()}/>
-  
     <Footer/>
   </div>
 )

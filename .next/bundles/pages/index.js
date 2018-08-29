@@ -2642,19 +2642,19 @@ function getSocialMedia() {
     title: "Simple Page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Article__["a" /* default */], {
     data_article: getArticle(),
     social_media: getSocialMedia(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 67
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Footer_jsx__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 68
     }
   }));
 });
