@@ -1,7 +1,7 @@
 module.exports =
 __NEXT_REGISTER_PAGE('/about', function() {
           var comp =
-      webpackJsonp([5],{
+      webpackJsonp([4],{
 
 /***/ "./components/Footer.jsx":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2379,7 +2379,7 @@ function getSocialMedia() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/about.js");
@@ -2387,7 +2387,7 @@ module.exports = __webpack_require__("./pages/about.js");
 
 /***/ })
 
-},[4])
+},[3])
           return { page: comp.default }
         })
       ;
