@@ -8,7 +8,7 @@ export default class social_icon extends React.Component {
         <div id="social">
           <h3 id="social_title">Follow Us On</h3>
           {this.props.data.map(social => (
-            <Link href={social.link}>
+            <Link href={social.link} key={social.id}>
               <a id="social_icon">
                 <img src={social.icon} alt={social.name} />
               </a>
