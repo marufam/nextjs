@@ -3,6 +3,8 @@ import Article_title from "../components/Article_title";
 import Article_title_desc from "../components/Article_title_desc";
 import Article_img from "../components/Article_img";
 import Social_icon from "../components/Social_icon";
+import Top_article from "./Top_article";
+
 export default class Article extends React.Component {
   render() {
     return (
@@ -28,7 +30,7 @@ export default class Article extends React.Component {
             <br />
             <Social_icon data={this.props.social_media} />
           </div>
-          <div id="sidebar" />
+          <Top_article  data={this.props.top}/>
         </div>
         <style jsx>{`
           #content {
@@ -37,18 +39,14 @@ export default class Article extends React.Component {
             float: left;
             width: 70%;
           }
+          
           #main-wrap {
             /* overflow to handle inner floating block */
             overflow: hidden;
             margin-top: 20px;
             margin-bottom: 20px;
           }
-          #sidebar {
-            float: right;
-            width: 25%;
-            height: 100px;
-            border: 1px solid #ddd;
-          }
+          
         `}</style>
       </div>
     );

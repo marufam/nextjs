@@ -54,14 +54,50 @@ function getSocialMedia() {
   ];
 }
 
+function getTopArticle() {
+  return [
+    {
+      id: "1",
+      name: "Lure of a comfortable, semi-retired lifestyle at just $1,500 a month",
+      link: "https://www.edgeprop.sg/property-news/lure-comfortable-semi-retired-lifestyle-just-1500-month"
+    },
+    {
+      id: "2",
+      name: "My House Tour: A Bachelor Pad in Tanjong Pagar",
+      link: "https://www.edgeprop.sg/property-news/my-house-tour-bachelor-pad-tanjong-pagar"
+    },
+    {
+      id: "3",
+      name: "5 things you need to know about Jho Low’s super-lux Singapore condo",
+      link: "https://www.edgeprop.sg/property-news/5-things-you-need-know-about-jho-low%E2%80%99s-super-lux-singapore-condo"
+    },
+    {
+      id: "4",
+      name: "The most expensive Good Class Bungalows sold in Singapore in 2018",
+      link: "https://www.edgeprop.sg/property-news/most-expensive-good-class-bungalows-sold-singapore-2018"
+    },
+    {
+      id: "5",
+      name: "Higher ABSD rates, tighter loan limits: What this means for Singapore’s homebuyers",
+      link: "https://www.edgeprop.sg/property-news/higher-absd-rates-tighter-loan-limits-what-means-singapore%E2%80%99s-homebuyers-0"
+    }
+  ];
+}
+
 
 export default () => (
-  <div>
+  <div id="body">
+    
+    {/* <div id="coba">hbsjkhsjkhsk</div> */}
     <Head>
         <title>Simple Page</title>
     </Head>
     <Header title="Simple Page"/>
-    <Article data_article={getArticle()} social_media={getSocialMedia()}/>
+    <Article data_article={getArticle()} social_media={getSocialMedia()} top={getTopArticle()} event={getSocialMedia()}/>
     <Footer/>
+    <style jsx>{`
+    
+          
+        `}</style>
   </div>
 )
