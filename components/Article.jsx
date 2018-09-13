@@ -30,7 +30,7 @@ export default class Article extends React.Component {
             <br />
             <Social_icon data={this.props.social_media} />
           </div>
-          <Top_article  data={this.props.top}/>
+          <Top_article  data={this.props.top} data2={this.props.event}/>
         </div>
         <style jsx>{`
           #content {

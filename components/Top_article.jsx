@@ -37,14 +37,11 @@ export default class top_article extends React.Component {
            <h3> Event calender</h3>
         </div>
         <div id="event-content">
-          {this.props.data.map(event => (
+          {this.props.data2.map(event => (
             <Link href={event.link} key={event.id}>
-              <a>
+              <a id="link">
                 <div id="event-contain">
-                <img src={event.icon} alt={event.name}/>
-                <div id="event-number">
-                  {event.id}
-                </div>
+                <img src={event.img} width="100%" alt={event.name}/>
                 <div id="event-content-title">   
                   {event.name}
                 </div>
@@ -60,6 +57,15 @@ export default class top_article extends React.Component {
         <style jsx>{`
           #break{
             clear:both;
+          }
+          #event-content-title{
+            font-weight:bold;
+            background-color: #f3f6f9;
+            margin: 0px 2px 2px 2px;
+            padding: 0.5rem;
+          }
+          #link{
+            text-decoration:none;
           }
           #top-conttent {
             /* overflow to handle inner floating block */

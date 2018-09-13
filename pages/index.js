@@ -84,6 +84,23 @@ function getTopArticle() {
   ];
 }
 
+function getEvent_calender() {
+  return [
+    {
+      id: "1",
+      name: "Agent Training - 13 September 2018",
+      img: "https://dkc9trqgco1sw.cloudfront.net/styles/homepage_new_slider_main/s3/Agent%20Training%20Cover%20Edgeprop-552_15.jpg?itok=RJbKGSQb",
+      link: "https://www.edgeprop.sg/property-events/agent-training-13-september-2018"
+    },
+    {
+      id: "2",
+      name: "Property Auction by Knight Frank (September 2018)",
+      img: "https://dkc9trqgco1sw.cloudfront.net/styles/homepage_new_slider_main/s3/KnightFrank_2.jpg?itok=57vsHeVw",
+      link: "https://www.edgeprop.sg/property-events/property-auction-knight-frank-september-2018"
+    }
+  ];
+}
+
 
 export default () => (
   <div id="body">
@@ -93,7 +110,7 @@ export default () => (
         <title>Simple Page</title>
     </Head>
     <Header title="Simple Page"/>
-    <Article data_article={getArticle()} social_media={getSocialMedia()} top={getTopArticle()} event={getSocialMedia()}/>
+    <Article data_article={getArticle()} social_media={getSocialMedia()} top={getTopArticle()} event={getEvent_calender()}/>
     <Footer/>
     <style jsx>{`
     
